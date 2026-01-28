@@ -1,6 +1,8 @@
 module Intro1 where
 
 -- define named constants:
+-- The main problem of this code is that there is no defining any variables or functions
+--need to do something like r1 :: Integer or diff :: int-> int
 r1 = 1
 r2 = b^2 + 1/b where b = 2
 
