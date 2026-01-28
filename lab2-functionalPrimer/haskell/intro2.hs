@@ -37,6 +37,7 @@ main =
 
 
 -- generic string conversion, using a Java-friendly name:
+-- i think toString is a function that converts any value to a string and in this case show is a type parameter
 toString value = show value
 
 -- string concatenation:
