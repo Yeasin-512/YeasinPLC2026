@@ -1,4 +1,6 @@
 onePlusone = "1 + 1 = 2"
+-- It could instead be onePlusone =  putStrLn("1 + 1=2")
+-- then you would not need to use putStrLn onePlusone in main function.
 test = 'a'
 
 main = do
