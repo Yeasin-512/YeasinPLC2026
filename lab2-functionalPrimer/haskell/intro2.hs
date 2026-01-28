@@ -12,6 +12,8 @@ myprogram = print (1 + m)  -- compiler error: m undefined
 m = 1                      -- unless this line is also present
 
 -- sequencing several imperative programs:
+-- i think with the keyword do it calls another function (use do when the
+-- function can not do something by itself)
 prg1 = do
   print "hello " 
   print name  -- level of indentation is important
@@ -20,6 +22,8 @@ prg1 = do
 prg1' = sequence_ [print "hello ", print name]
 
 -- one imperative program passing value to another:
+-- getLine is a pre-built function that requires and input from the user
+-- the function putStrLn only works with string
 prg2 = do
   line <- getLine
   putStrLn ("you typed: " ++ line)
