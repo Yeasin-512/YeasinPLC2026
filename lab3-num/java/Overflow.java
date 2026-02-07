@@ -85,8 +85,8 @@ public class Overflow
         float ns = 1;
         for ( int j = 1; j <= m; j++ )
         {
-            ns = ns * n;
-//             assert ?? : "Floating-point overflow";
+            ns = ns *n;
+            assert ns != ns * 2 : "Floating-point overflow";
             resultList.add(ns);
         }
         return resultList;
